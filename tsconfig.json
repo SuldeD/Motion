@@ -21,6 +21,16 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/vercel/page.tsx",
+    "components/vercel-ticket.jsx",
+    "models/hybridly-stickers/hybridly.glb",
+    "components/piber-model.tsx",
+    "app/move/page.jsx"
+  ],
   "exclude": ["node_modules"]
 }
