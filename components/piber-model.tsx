@@ -1,40 +1,40 @@
-"use client";
-import {
-  Environment,
-  MeshTransmissionMaterial,
-  OrbitControls,
-  useGLTF,
-  useTexture,
-} from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { Physics } from "@react-three/rapier";
+// "use client";
+// import {
+//   Environment,
+//   MeshTransmissionMaterial,
+//   OrbitControls,
+//   useGLTF,
+//   useTexture,
+// } from "@react-three/drei";
+// import { Canvas } from "@react-three/fiber";
+// import { Physics } from "@react-three/rapier";
 import React from "react";
-import { DoubleSide } from "three";
+// import { DoubleSide } from "three";
 
-const Stickers = () => {
-  const texture = useTexture("/models/hybridly-stickers/avatartion.png");
-  return (
-    <>
-      <mesh>
-        <planeGeometry />
-        <meshPhysicalMaterial
-          map={texture}
-          transparent
-          clearcoat={1}
-          roughness={0}
-          side={DoubleSide}
-        />
-      </mesh>
-    </>
-  );
-};
+// const Stickers = () => {
+//   const texture = useTexture("/models/stickers/avatartion.png");
+//   return (
+//     <>
+//       <mesh>
+//         <planeGeometry />
+//         <meshPhysicalMaterial
+//           map={texture}
+//           transparent
+//           clearcoat={1}
+//           roughness={0}
+//           side={DoubleSide}
+//         />
+//       </mesh>
+//     </>
+//   );
+// };
 
 export default function Scene() {
-  const { nodes }: any = useGLTF("/models/hybridly-stickers/hybridly.glb");
+  // const { nodes }: any = useGLTF("/models/stickers/hybridly.glb");
 
   return (
-    <div className="relative size-[300px] lg:size-[600px] mx-auto bg-gray-6">
-      <Canvas shadows camera={{ position: [0, 0, 6], fov: 45 }}>
+    <div className="relative size-[300px] lg:size-[600px] mx-auto">
+      {/* <Canvas shadows camera={{ position: [0, 0, 6], fov: 45 }}>
         <OrbitControls target={[0, 0, 0]} />
         <Physics
           // debug={debug}
@@ -58,7 +58,7 @@ export default function Scene() {
 
         <ambientLight intensity={2} />
         <Environment preset="city" blur={0} />
-      </Canvas>
+      </Canvas> */}
     </div>
   );
 }

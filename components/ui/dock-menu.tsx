@@ -12,11 +12,13 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
 
 type DockItem = {
   id: string;
   icon?: JSX.Element;
   href: string;
+  name: string;
 };
 
 type DockContainerProps = {
@@ -95,19 +97,24 @@ function DockItem({ children, containerX, mouseX, item }: DockItemProps) {
 
   return (
     <Link href={item.href} passHref>
-      <motion.div
-        role="button"
-        ref={itemRef}
-        className="group relative flex aspect-square items-center justify-center rounded-full transition active:-translate-y-5 bg-gray-3 active:duration-300 active:ease-out text-gray-10 duration-300"
-        style={{
-          width,
-        }}
-      >
-        {children}
-        {router === item.href && (
-          <div className="absolute w-1 h-1 rounded-full -bottom-1.5 bg-gray-10 opacity-30 z-10" />
-        )}
-      </motion.div>
+      <Tooltip>
+        <TooltipTrigger className="duration-75 ease-out">
+          <motion.div
+            role="button"
+            ref={itemRef}
+            className="group relative flex aspect-square items-center justify-center rounded-full transition active:-translate-y-5 bg-gray-3 active:duration-300 active:ease-out text-gray-10 duration-300"
+            style={{
+              width,
+            }}
+          >
+            {children}
+            {router === item.href && (
+              <div className="absolute w-1 h-1 rounded-full -bottom-1.5 bg-gray-10 opacity-30 z-10" />
+            )}
+          </motion.div>{" "}
+        </TooltipTrigger>
+        <TooltipContent>{item.name}</TooltipContent>
+      </Tooltip>
     </Link>
   );
 }

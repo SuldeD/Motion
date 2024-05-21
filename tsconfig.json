@@ -27,10 +27,13 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/vercel/page.tsx",
-    "components/vercel-ticket.jsx",
+    "components/crafts/crafted/vercel-ticket.jsx",
     "models/hybridly-stickers/hybridly.glb",
-    "components/piber-model.tsx",
-    "app/move/page.jsx"
+    "components/crafts/piber-model.jsx",
+    "app/move/page.jsx",
+    "app/fiber/page.jsx",
+    "components/carousel/page.jsx",
+    "components/crafts/crafted/fiber.jsx"
   ],
   "exclude": ["node_modules"]
 }

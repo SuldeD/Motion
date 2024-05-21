@@ -30,8 +30,10 @@ const config = {
           2: "hsl(var(--gray-2))",
           3: "hsl(var(--gray-3))",
           4: "hsl(var(--gray-4))",
+          5: "hsl(var(--gray-5))",
           6: "hsl(var(--gray-6))",
           10: "hsl(var(--gray-10))",
+          11: "hsl(var(--gray-11))",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

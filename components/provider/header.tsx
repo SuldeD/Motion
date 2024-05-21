@@ -21,14 +21,14 @@ const Header = () => {
 
   return (
     <div className="grid grid-cols-3 md:grid-cols-5 items-center h-16 justify-between container bg-background">
-      <div className="text-sm md:flex col-span-2 hidden font-light text-foreground/50 items-center gap-2">
+      <div className="text-xs md:flex col-span-2 hidden font-light text-foreground/50 items-center gap-2">
         <p className="">IRELAND, DU</p>
         <p className="text-2xl">•</p>
         <Suspense>{time}</Suspense>
       </div>
 
       <Link href="/" className="col-span-1">
-        <div className="flex items-center justify-center gap-2 text-sm font-semibold text-foreground text-center">
+        <div className="flex items-center justify-start lg:justify-center gap-2 text-xs font-semibold text-foreground text-center">
           <span className="text-foreground">
             <span>MATTMAN</span>
             <span className="font-light text-foreground/50">.COM</span>

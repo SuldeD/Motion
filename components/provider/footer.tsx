@@ -6,6 +6,7 @@ const Footer = () => {
     {
       id: "first-id",
       href: "/",
+      name: "Home",
       icon: (
         <svg
           aria-hidden="true"
@@ -35,6 +36,7 @@ const Footer = () => {
     {
       id: "second-id",
       href: "/test",
+      name: "Test",
       icon: (
         <svg
           aria-hidden="true"
@@ -61,7 +63,8 @@ const Footer = () => {
     },
     {
       id: "fourth-id",
-      href: "/piber",
+      href: "/craft",
+      name: "Craft",
       icon: (
         <svg
           aria-hidden="true"
@@ -92,6 +95,7 @@ const Footer = () => {
     {
       id: "fifth-id",
       href: "/vercel",
+      name: "Vercel",
       icon: (
         <svg
           aria-hidden="true"
@@ -117,6 +121,7 @@ const Footer = () => {
     {
       id: "sixth-id",
       href: "/vercel",
+      name: "Vercel",
       icon: (
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
           <path fill="none" d="M0 0h24v24H0z"></path>
@@ -127,6 +132,7 @@ const Footer = () => {
     {
       href: "/vercel",
       id: "seventh-id",
+      name: "Vercel",
       icon: (
         <svg
           aria-hidden="true"

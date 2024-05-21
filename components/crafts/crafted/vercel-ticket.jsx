@@ -22,7 +22,7 @@ extend({ MeshLineGeometry, MeshLineMaterial });
 
 export default function VercelTicket() {
   return (
-    <div className="h-[90svh]">
+    <div className="h-full">
       <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
         <ambientLight intensity={Math.PI} />
         <Physics

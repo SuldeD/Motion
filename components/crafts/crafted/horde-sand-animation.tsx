@@ -5,7 +5,7 @@ let GLOBAL_EE_ANIMATION_FRAME = -1;
 
 export const EASTER_EGG_SUBJECTS = [
   {
-    imageSrc: "/ast.png",
+    imageSrc: "/art.png",
     tagline: `Now you can donate your new  to the ape wildlife fund.`,
   },
 ];
@@ -280,7 +280,7 @@ export function EasterEggComponent(props: EasterEggRenderProps): JSX.Element {
             padding: "0px 40px 15px 40px",
           }}
         >
-          Image Model
+          Digital art
         </h3>
       </div>
     </div>
